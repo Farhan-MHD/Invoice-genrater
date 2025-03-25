@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        .invoice-container { max-width: 800px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        .header { text-align: center; }
+        h1 { color: #333; }.details{display: flex; justify-content: space-around;}.details p{margin: 8px;}
+        .company-details, .client-details { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .total-section {  font-weight: bold; }
+        .chart-container { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <h1>Invoice</h1>
+            <p><strong>Invoice No:</strong> INV-0032-12 | <strong>Date:</strong> 2025-03-25</p>
+        </div>
+        <div class="details">
+            <div class="company-details">
+                <p><strong>From:</strong></p>
+                <p>Lanka Tech Solution </p>
+                <p>No:45 Colombo-07, Sri Lanka</p>
+                <p>Contact@lankatech.lk</p>
+            </div>
+    
+            <div class="client-details">
+                <p><strong>To:</strong></p>
+                <p>Nimal Perera</p>
+                <p>No:23 Kandy Road, Kandy</p>
+                <p>761234567</p>
+            </div>
+        </div>
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price (QAR)</th>
+                    <th>Total (QAR)</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                        <td>Software License</td>
+                        <td>15000</td>
+                        <td>3</td>
+                        <td>45000</td>
+                    </tr><tr>
+                        <td>Consulting Solution</td>
+                        <td>20000</td>
+                        <td>2</td>
+                        <td>40000</td>
+                    </tr><tr>
+                        <td>Hardware Maintanence</td>
+                        <td>30000</td>
+                        <td>2</td>
+                        <td>60000</td>
+                    </tr><tr>
+                        <td>Training Session</td>
+                        <td>7000</td>
+                        <td>3</td>
+                        <td>21000</td>
+                    </tr>
+            </tbody>
+        </table>
+
+        <p class="total-section">Subtotal: 166000 LKR</p>
+        <p class="total-section">Tax (2%): 3320 LKR</p>
+        <p class="total-section"><strong>Grand Total: 169320 LKR</strong></p>
+    </div>
+
+   
+</body>
+</html>
+

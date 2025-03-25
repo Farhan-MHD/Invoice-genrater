@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    background-color: rgb(35,35,35);
+}
+
+h1, h2 {
+    text-align: center;
+    color:#ffffff;
+}
+
+.invoice-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Form Sections */
+.form-section {
+    min-width: 300px;
+    background: rgb(87, 87, 87);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #f5f3f4;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+}
+
+input:focus,select:focus,textarea:focus{
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color:#ffffff;
+}
+p{
+    color:#ffffff;
+}
+
+/* Buttons */
+.submit-btn, .add-item-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background: #007bff;
+    color:#ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.add-item-btn{
+    text-align: center;
+}
+.submit-btn:hover, .add-item-btn:hover {
+    background: #0056b3;
+    
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background: rgb(238, 233, 233);
+    color:#ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button span{
+    text-align: center;
+}
+
+.d-p-wraper{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff8a;
+}
+
+.download-pdf{
+    width: 300px;
+    padding-top: 10px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(35,35,35);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.download-pdf P{
+    margin: 20px 0;
+    color: white;
+    transition-duration: .4s;
+}
+.download-pdf a{
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto 20px;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4361ee;
+    transition-duration: .4s;
+}
+.download-pdf a:hover{
+    background-color: #3f37c9;
+}
