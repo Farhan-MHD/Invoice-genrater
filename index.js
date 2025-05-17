@@ -6,7 +6,7 @@ import express from "express";
 import bodyParser from "body-parser"
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 // Resolve the file path (for compatibility)
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
